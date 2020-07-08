@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="493.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EventNewPost">
+   <children>
+      <Button fx:id="eventBackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#eventBackButtonPressed" text="&lt;Back" />
+      <Text layoutX="258.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Event Post" />
+      <Button fx:id="imageUploadButton" layoutX="99.0" layoutY="290.0" mnemonicParsing="false" onAction="#imageUploadButtonPressed" text="Browse Image" />
+      <ImageView fx:id="eventImage" fitHeight="150.0" fitWidth="209.0" layoutX="47.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="329.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <TextField fx:id="eventName" layoutX="406.0" layoutY="75.0" promptText="event title" />
+      <Text layoutX="299.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+      <Text layoutX="323.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Venue" />
+      <Text layoutX="329.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+      <Text layoutX="317.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacity" />
+      <TextField fx:id="eventDescription" layoutX="406.0" layoutY="125.0" promptText="event description" />
+      <TextField fx:id="venue" layoutX="406.0" layoutY="170.0" promptText="event location" />
+      <TextField fx:id="date" layoutX="406.0" layoutY="217.0" promptText="dd/mm/yyyy" />
+      <TextField fx:id="capacity" layoutX="406.0" layoutY="264.0" promptText="number" />
+      <Button fx:id="saveEventButton" layoutX="406.0" layoutY="323.0" mnemonicParsing="false" onAction="#saveEventButtonPressed" text="Save" />
+      <TextField fx:id="imageBrowser" layoutX="70.0" layoutY="252.0" onAction="#imageUploadButtonPressed" />
+      <Separator layoutX="291.0" layoutY="55.0" orientation="VERTICAL" prefHeight="345.0" prefWidth="7.0" />
+      <Separator layoutY="53.0" prefHeight="7.0" prefWidth="601.0" />
+      <AnchorPane layoutX="14.0" layoutY="336.0" minHeight="0.0" minWidth="0.0" prefHeight="118.0" prefWidth="277.0">
+         <children>
+            <DialogPane fx:id="dialogBoxEvent" layoutX="-5.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="118.0" prefWidth="281.0">
+                <header>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="119.0" prefWidth="310.0" />
+                </header>
+                <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                </content>
+                <expandableContent>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                </expandableContent>
+            </DialogPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

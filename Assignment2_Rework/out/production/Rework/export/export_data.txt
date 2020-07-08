@@ -1,0 +1,42 @@
+EVENT
+EVE001,Concert,Salena Gomez is performing,s1,Open,Marvel Stadium,09/06/2020,5,2,src/images/event_Concerts1.jpg
+EVENT
+EVE002,Spanish Night,1+1 on drinks!,s2,Open,Spice Market,09/06/2020,10,2,src/images/eventImage.jpg
+SALE
+SAL001,HD Monitor ,HP - 2r42e for sale. ,s1,Open,250,200,10,src/images/sale_HD Monitor s1.jpg
+SALE
+SAL002,Ninja H2,2017 Model. With RWC and Rego,s2,Open,2500,1070,50,src/images/saleImage.png
+JOB
+JOB001,Web Design Internship,Internship in RMIT University,s1,Open,40,37,src/images/job_Web Design Internships1.png
+JOB
+JOB002,Bodyguard Required,Interview date TBD,s2,Open,100,90,src/images/jobImage.jpg
+REPLY
+EVE001,1,s123
+REPLY
+EVE002,1,s123
+REPLY
+JOB001,35,s123
+REPLY
+JOB002,95,s123
+REPLY
+SAL001,190,s123
+REPLY
+SAL002,1000,s123
+REPLY
+EVE001,2,s456
+REPLY
+EVE002,2,s456
+REPLY
+JOB001,37,s456
+REPLY
+JOB001,38,s456
+REPLY
+JOB002,90,s456
+REPLY
+SAL001,195,s456
+REPLY
+SAL001,200,s456
+REPLY
+SAL002,1025,s456
+REPLY
+SAL002,1070,s456

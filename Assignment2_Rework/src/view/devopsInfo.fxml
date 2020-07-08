@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="193.0" prefWidth="254.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DevopsInfo">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="32.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developer Information" textAlignment="CENTER" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="53.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID:    S3797675" />
+      <Text layoutX="39.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name:   Varun Ramesh" />
+      <Button fx:id="backButtonDevops" layoutX="95.0" layoutY="141.0" mnemonicParsing="false" onAction="#backButtonDevopsPressed" text="&lt;-Back" />
+   </children>
+</AnchorPane>

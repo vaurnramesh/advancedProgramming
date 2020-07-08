@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="540.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PostDetailsWindow">
+   <children>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonPressed" text="&lt;-Back" />
+      <Label fx:id="title" layoutX="272.0" layoutY="9.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+      <ToolBar layoutY="257.0" prefHeight="35.0" prefWidth="324.0">
+        <items>
+          <Button fx:id="uploadImage" mnemonicParsing="false" onAction="#uploadImagePressed" prefHeight="26.0" prefWidth="99.0" text="Upload Image" />
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveButtonPressed" text="Save (after edit)" />
+            <Button fx:id="getRepliesButton" mnemonicParsing="false" onAction="#getRepliesButtonPressed" prefHeight="26.0" prefWidth="98.0" text="Get Reply" />
+        </items>
+      </ToolBar>
+      <TableView fx:id="tableView" layoutY="389.0" prefHeight="150.0" prefWidth="717.0">
+        <columns>
+          <TableColumn fx:id="userIdCol" editable="false" prefWidth="358.3999878168106" resizable="false" text="User ID" />
+          <TableColumn fx:id="valuesCol" editable="false" prefWidth="308.0000915527344" resizable="false" text="Replies" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="uploadImageText" layoutX="41.0" layoutY="220.0" onAction="#uploadImagePressed" />
+      <Label fx:id="details" alignment="TOP_CENTER" layoutX="29.0" layoutY="323.0" prefHeight="24.0" prefWidth="214.0" />
+      <Text layoutX="477.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="POST DETAILS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="details1" layoutX="534.0" layoutY="79.0" />
+      <TextField fx:id="details2" layoutX="533.0" layoutY="120.0" prefHeight="90.0" prefWidth="150.0" />
+      <TextField fx:id="details3" layoutX="533.0" layoutY="220.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="details4" layoutX="533.0" layoutY="262.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="details5" layoutX="534.0" layoutY="301.0" />
+      <Label fx:id="label1" layoutX="390.0" layoutY="82.0" prefHeight="18.0" prefWidth="130.0" />
+      <Label fx:id="label2" layoutX="392.0" layoutY="124.0" prefHeight="18.0" prefWidth="130.0" />
+      <Label fx:id="label3" layoutX="387.0" layoutY="224.0" prefHeight="18.0" prefWidth="130.0" />
+      <Label fx:id="label4" layoutX="386.0" layoutY="266.0" prefHeight="18.0" prefWidth="130.0" />
+      <Label fx:id="label6" layoutX="388.0" layoutY="350.0" prefHeight="18.0" prefWidth="130.0" />
+      <Label fx:id="label5" layoutX="388.0" layoutY="314.0" prefHeight="18.0" prefWidth="130.0" />
+      <DialogPane layoutX="40.0" layoutY="298.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="149.0">
+          <header>
+            <AnchorPane fx:id="dialogBox" minHeight="0.0" minWidth="0.0" prefHeight="58.0" prefWidth="150.0" />
+          </header>
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+          </content>
+          <expandableContent>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+          </expandableContent>
+      </DialogPane>
+      <TextField fx:id="details6" layoutX="534.0" layoutY="347.0" />
+   </children>
+</AnchorPane>
